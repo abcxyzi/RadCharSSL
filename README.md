@@ -2,9 +2,11 @@
 
 # Self-Supervised Radar Signal Recognition
 
-This repo contains radar datasets accompanying the paper "Few-Shot Radar Signal Recognition through Self-Supervised Learning and Radio Frequency Domain Adaptation", accepted for publication at the IEEE International Workshop on Machine Learning for Signal Processing (MLSP) 2025.
+This repo contains radar datasets accompanying the paper "Few-Shot Radar Signal Recognition through Self-Supervised Learning and Radio Frequency Domain Adaptation", published at the IEEE International Workshop on Machine Learning for Signal Processing (MLSP) 2025.
 
 You can access our preprint 📄 here: [https://arxiv.org/abs/2501.03461](https://arxiv.org/abs/2501.03461)
+
+You can download our dataset ⬇️ here: [https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025](https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025)
 
 ## Quick Links
 
@@ -34,7 +36,7 @@ RadChar contains several variants used to support self-supervised pre-training, 
 
 Note, RadChar dataset variants were derived from our [previous work](https://github.com/abcxyzi/RadChar).
 
-## RadChar (Radar Data) 📂
+## RadChar (Radar Data)
 
 **RadChar** is our own dataset. This was introduced in [Multi-Task Learning For Radar Signal Characterisation](https://ieeexplore.ieee.org/document/10193318), published in the 2023 IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW).
 
@@ -44,42 +46,17 @@ Note, RadChar dataset variants were derived from our [previous work](https://git
 - 512 I/Q samples per frame
 - 0.3 μs in temporal resolution
 
-RadChar contains several sizes provided in `.h5` files. The baseline dataset is RadChar-Baseline which is given by `RadChar-Baseline.h5`. It can be downloaded from: https://github.com/abcxyzi/RadChar
+RadChar is available in multiple sizes, provided as .h5 files. The baseline dataset, RadChar-Baseline (RadChar-Baseline.h5), can be downloaded from: https://github.com/abcxyzi/RadChar.
 
-We introduce several RadChar variants to support self-supervised pre-training, few-shot fine-tuning, and model evaluation in our paper, these include:
+To support self-supervised pre-training, few-shot fine-tuning, and model evaluation in our paper, we introduce several RadChar variants:
 
-- RadChar-SSL - this is used for pre-training only
-- RadChar-nShot - this is used for few-shot fine-tuning only, where n = 1, 5, 10
-- RadChar-Eval - this is used for evaluation only
+1. RadChar-SSL - a newly introduced dataset used exclusively for pre-training.
+2. RadChar-nShot - three small-scale datasets (n = 1, 5, 10) for few-shot fine-tuning, uniquely sampled from 90% of RadChar-Baseline.
+3. RadChar-Eval - the evaluation dataset (i.e., test set), created from the remaining 10% of RadChar-Baseline.
 
-RadChar-SSL is a new dataset. RadChar-nShot and RadChar-Eval were created from a random 90-10 train-test split of RadChar-Baseline, respectively.
+RadChar-SSL and its parts can be downloaded from [Kaggle](https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025).
 
-### RadChar-Eval 💾
-
-RadChar-Eval is created from the 10% split of RadChar-Baseline. This is used as the evaluation dataset (i.e., test-set) in our paper.
-
-RadChar-Eval can be downloaded from: `download link will be made available soon`
-
-### RadChar-nShot 💾
-
-RadChar-nShot contains three small-scale datasets used for few-shot fine-tuning. These datasets were created from the 90% split of RadChar-Baseline.
-
-RadChar-nShot can be downloaded from: 
-- 1-shot: `download link will be made available soon`
-- 5-shot: `download link will be made available soon`
-- 10-shot: `download link will be made available soon`
-
-### RadChar-SSL 💾
-
-RadChar-SSL is a new synthetic RadChar-like dataset generated for self-supervised pre-training only. This dataset does not contain class annotations.
-
-RadChar-SSL contains 500,000 frames, with the same characteristics as RadChar-Baseline:
-- 5 classes
-- 41 SNR levels (-20 to 20 dB with a 1 dB resolution)
-- 512 I/Q samples per frame
-- 0.3 μs in temporal resolution
-
-## RadioML (Comm Data) 📂 
+## RadioML (Comm Data)
 
 RadioML 2018.01A (**RadioML**) is a dataset created by [DeepSig Inc](https://www.deepsig.ai/). This dataset was introduced in [Over-the-Air Deep Learning Based Radio Signal Classification](https://ieeexplore.ieee.org/document/8267032), published in the 2017 IEEE Journal of Selected Topics in Signal Processing.
 
@@ -93,7 +70,7 @@ RadioML is provided as a single file `GOLD_XYZ_OSC.0001_1024.hdf5` (21.45 GB), i
 
 10% of RadioML were used for self-supervised pre-training in our paper.
 
-## DeepRadar (Radar Data) 📂 
+## DeepRadar (Radar Data)
 
 **DeepRadar** is a dataset created by the [Radar and Microwave Group](http://www.gmr.ssr.upm.es:8080/?language=EN). This dataset was introduced in [LSTM Framework for Classification of Radar and Communications Signals](https://ieeexplore.ieee.org/document/10149618), published in the 2023 IEEE Radar Conference (RadarConf23).
 
@@ -107,7 +84,7 @@ DeepRadar is provided in three parts (train, validation, and test). The individu
 
 The training set `X_train.mat` was used for self-supervised pre-training in our paper
 
-## RadarComm (Comm & Radar Data) 📂
+## RadarComm (Comm & Radar Data)
 
 **RadarComm** is a dataset created by [ANDRO Computational Solutions](https://www.androcs.com/wp/). This dataset was introduced in [Multi-task Learning Approach for Automatic Modulation and Wireless Signal Classification](https://ieeexplore.ieee.org/document/9500447), published in the 2021 IEEE International Conference on Communications (ICC).
 
