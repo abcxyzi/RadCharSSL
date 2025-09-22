@@ -11,9 +11,6 @@ You can download our dataset ⬇️ here: [https://www.kaggle.com/datasets/abcxy
 ## Quick Links
 
 - [RadChar (Radar Data)](#radchar-radar-data)
-    - [RadChar-Eval](#radchar-eval)
-    - [RadChar-nShot](#radchar-nshot)
-    - [RadChar-SSL](#radchar-ssl)
 - [RadioML (Comm Data)](#radioml-comm-data)
 - [DeepRadar (Radar Data)](#deepradar-radar-data)
 - [RadarComm (Comm & Radar Data)](#radarcomm-comm--radar-data)
