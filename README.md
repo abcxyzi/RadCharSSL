@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2501.03461-b31b1b.svg)](https://arxiv.org/abs/2501.03461) [![Kaggle](https://img.shields.io/badge/Kaggle-RadCharSSL-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025) [![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.03461-b31b1b.svg)](https://arxiv.org/abs/2501.03461) [![Kaggle](https://img.shields.io/badge/Kaggle-RadCharSSL-blue?logo=kaggle)](https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025) [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Self-Supervised Radar Signal Recognition
 
@@ -100,13 +100,10 @@ The RadarComm dataset with dynamic channel effects `RadComDynamic.zip` was used 
 💡 Please cite both the dataset and the conference paper if you find them helpful for your research. Cheers.
 
 ```latex
-@misc{huang2025fewshot,
-  title        = {Few-Shot Radar Signal Recognition through Self-Supervised Learning and Radio Frequency Domain Adaptation},
-  author       = {Zi Huang and Simon Denman and Akila Pemasiri and Clinton Fookes and Terrence Martin},
-  year         = {2025},
-  eprint       = {2501.03461},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.LG},
-  url          = {https://arxiv.org/abs/2501.03461}
+@inproceedings{huang2025fewshot,
+  title     = {Few-Shot Radar Signal Recognition through Self-Supervised Learning and Radio Frequency Domain Adaptation},
+  author    = {Zi Huang and Simon Denman and Akila Pemasiri and Clinton Fookes and Terrence Martin},
+  booktitle = {Proc. IEEE 35th Int. Workshop Mach. Learn. Signal Process. (MLSP)},
+  year      = {2025}
 }
 ```

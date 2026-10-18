@@ -61,7 +61,7 @@ class RadCharDataModule():
     def loadEvaluationSet(self):
         """For evaluation of fine-tuned models"""
         # NOTE: Download .h5 file from https://www.kaggle.com/datasets/abcxyzi/radcharssl-mlsp-2025
-        return RadCharDataset(self.data_path + "RadChar-testset.h5")
+        return RadCharDataset(self.data_path + "RadChar-Eval.h5")
     
 if __name__ == "__main__":    
     # NOTE: Change the path as required
